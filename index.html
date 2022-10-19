@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie sua mentoria</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="./assets/svg/stars.svg" alt="Desenho de um pensamento com 5 estrelas e 3 delas estão preenchidas">
+            <div class="card-top">
+                <h2>Informações pessoais</h2>
+            </div>
+        </header>
+
+        <form class="card" id="rate-form">
+            <fieldset>
+                <div class="fieldset-wrapper">
+
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="rate-name">Nome</label>
+                            <input type="text" id="rate-name" required placeholder="Digite o seu nome">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="rate-last-name">Sobrenome</label>
+                            <input type="text" id="rate-last-name" required placeholder="Digite o seu sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="rate-email">Email <span>(digite um email válido)</span></label>
+                        <input type="email" id="rate-email" required placeholder="Digite o seu email">
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do mentor</legend>
+
+                    <div class="col-1">
+                        <div class="input-wrapper">
+                            <label for="rate-mentor-name">Quem foi seu mentor(a)?</label>
+                            <input type="text" id="rate-mentor-name" required placeholder="Digite o nome do seu mentor">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="rate-feedback">Feedback sobre o mentor</label>
+                        <textarea id="rate-feedback" placeholder="Digite seu feedback aqui..."></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="rate-checkbox">
+                        <label for="rate-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Agendando próxima mentoria</legend>
+
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="rate-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="rate-date" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="rate-begin">Das</label>
+                            <input type="time" id="rate-begin" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="rate-end">Até</label>
+                            <input type="time" id="rate-end" required>
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+        </form>
+        <footer>
+            <input class="button" type="submit" value="Salvar" form="rate-form">
+        </footer>
+    </div>
+</body>
+
+</html>
